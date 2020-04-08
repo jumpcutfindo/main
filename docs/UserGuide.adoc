@@ -188,7 +188,7 @@ general commands, people commands and wallet commands.
 === General Commands
 This section introduces the two general commands, `help` and `exit`. These commands are not specific to the people or wallet tabs of *Sharkie*.
 
-==== Viewing help : `help`
+==== Viewing help : `help` (Daniel)
 Suppose you need help regarding the many features of *Sharkie* and how to operate it, you can use the general `help` command to get a link to this user guide. +
 
 *Format*: `help`
@@ -204,7 +204,7 @@ Suppose you need help regarding the many features of *Sharkie* and how to operat
 
     Opened help window.
 
-==== Exiting the program : `exit`
+==== Exiting the program : `exit` (Daniel)
 
 Suppose you're done with using *Sharkie* and wish to exit the application safely, you can use the general `exit` command to help you save your data and exit the program. +
 
@@ -226,7 +226,7 @@ This section introduces the eight commands that you can use to have an effect on
 
 [[budget-command]]
 //tag::walletbudget[]
-==== Setting a budget: `budget`
+==== Setting a budget: `budget` (Daniel)
 Suppose you want to set a budget for a certain month, or a budget in general for all months. The command that you would enter in this case is our `wallet budget` command. +
 
 *Format*: `wallet budget $/<amount> [m/<month: mm>] [y/<year: yyyy>]`
@@ -274,7 +274,7 @@ If the budget value is set to 0, *Sharkie* will consider it as if you have not s
 
 [[add-expense-command]]
 //tag::walletexpense[]
-==== Adding an expense: `expense`
+==== Adding an expense: `expense` (Joel)
 Suppose you have paid for an expense and wish to record it down in *Sharkie*, you may enter the `wallet expense` command to do so.
 
 *Format*: `wallet expense n/<description> $/<amount> [d/<date: dd/mm/yyyy>] [t/<tag>]`
@@ -310,7 +310,7 @@ NOTE: The first letter of the `<tag>` will be converted to uppercase.
 
 [[add-income-command]]
 //tag::walletincome[]
-==== Adding an income: `income`
+==== Adding an income: `income` (Joel)
 
 Suppose you have earned an income and wish to record it down in *Sharkie*, you may enter the `wallet income` command to do so.
 
@@ -345,7 +345,7 @@ NOTE: The first letter of the `<tag>` will be converted to uppercase.
 //end::walletincome[]
 
 //tag::walletedit[]
-==== Editing a transaction: `edit`
+==== Editing a transaction: `edit` (Grace)
 
 Suppose you want to edit the details of an income or expense in your wallet, the command you would enter is our `wallet edit` command. +
 
@@ -393,7 +393,7 @@ _Still confused? Find out more about <<transactionIndexFAQ, what is a transactio
 //end::walletedit[]
 
 //tag::walletdelete[]
-==== Deleting an income or expense: `delete`
+==== Deleting an income or expense: `delete` (Grace)
 Suppose you want to delete a transaction, either an expense or income, the command you would enter is our `wallet delete` command. +
 
 *Format*: `wallet delete <transaction's index>`
@@ -428,7 +428,7 @@ _Still confused? Find out more about <<transactionIndexFAQ, what is a transactio
 
 //tag::walletfind[]
 [[walletFind]]
-==== Finding an income or expense: `find`
+==== Finding an income or expense: `find` (Grace)
 Suppose you want to find transactions with certain keywords or date within the transaction list in the wallet, the command you would enter is our `wallet find` command. +
 
 *Format*: `wallet find n/<keyword> [<keyword> ...]` +
@@ -488,7 +488,7 @@ The following are the restrictions of `wallet find` command, which you would nee
 //end::walletfind[]
 
 //tag::walletList[]
-==== Listing all transactions: `list`
+==== Listing all transactions: `list` (Joel)
 
 Suppose you want to see the full list of transactions, the command you would enter is our `wallet list` command. +
 
@@ -512,7 +512,7 @@ Suppose you want to see the full list of transactions, the command you would ent
 
 // tag::walletClear[]
 [[walletClear]]
-==== Clearing all transactions : `clear`
+==== Clearing all transactions : `clear` (Daniel)
 
 Suppose you want to clear all the data in wallet, the command you would enter is our `wallet clear` command. +
 
@@ -542,7 +542,7 @@ This section introduces the twelve commands that you can use to have an effect o
 
 //tag::peopleadd[]
 [[add-person]]
-==== Adding a person: `add`
+==== Adding a person: `add` (Joel)
 
 Suppose you want to add a new person to the address book, the command you would enter is our `people add` command. +
 
@@ -580,7 +580,7 @@ into the address book.
 
 // tag::edit[]
 [[edit-person]]
-==== Editing a person : `edit`
+==== Editing a person : `edit` (Cheyanne)
 
 Suppose a person has changed his contact details, and you want to update them, the command that you would enter
 is the `people edit` command. +
@@ -619,7 +619,7 @@ _Still confused? Find out more about <<personIndexFAQ, what is a person's index>
 
 // tag::delete[]
 [[delete-person]]
-==== Deleting a person : `delete`
+==== Deleting a person : `delete` (Grace)
 
 Suppose you would like to delete a person's contact details, the
 command that you would enter is the `people delete` command.
@@ -657,7 +657,7 @@ _Still confused? Find out more about <<personIndexFAQ, what is a person's index>
 
 
 // tag::owe[]
-==== Recording the money you owe: `owe`
+==== Recording the money you owe: `owe` (Cheyanne)
 
 Suppose you owe a person money and you want to record the debt, the command you would enter is the `people owe` command. +
 
@@ -699,7 +699,7 @@ The `<date: dd/mm/yyyy>` is optional. If `<date: dd/mm/yyyy>` is not specified, 
 // end::owe[]
 
 // tag::return[]
-==== Recording the money you return: `returned`
+==== Recording the money you return: `returned` (Cheyanne)
 
 Suppose you have returned a person a debt, and you want to remove the debt recorded, the command that you would enter is
 the `people returned` command. +
@@ -745,7 +745,7 @@ Sharkie will remove all debts for the person if the `<debt's index>` is not spec
 // end::return[]
 
 // tag::lend[]
-==== Recording the money you lend: `lend`
+==== Recording the money you lend: `lend` (Cheyanne)
 
 Suppose you lend a person money and you want to record the loan, the command you would enter is the `people lend` command. +
 
@@ -787,7 +787,7 @@ The `<date: dd/mm/yyyy>` is optional. If `<date: dd/mm/yyyy>` is not specified, 
 // end::lend[]
 
 // tag::peoplereceived[]
-==== Recording the money you received: `received`
+==== Recording the money you received: `received` (Cheyanne)
 
 Suppose you want to record that you have received the money for a certain loan (or for all loans) from your friend,
 the command you would enter is our `people received` command.
@@ -834,7 +834,7 @@ for the first loan in his loans list.
 // end::peoplereceived[]
 
 //tag::peopleremind[]
-==== Sending reminder to a friend: `remind`
+==== Sending reminder to a friend: `remind` (Syin Yi)
 
 Suppose you want to remind a friend to return unsettled loans to you through an email,
 the command you would enter is our `people remind` command.
@@ -881,7 +881,7 @@ please visit <<remind-connection-error, how to resolve connection issues>>.
 //end::peopleremind[]
 
 //tag::peopleremindall[]
-==== Sending reminder to all friends: `remindall`
+==== Sending reminder to all friends: `remindall` (Syin Yi)
 
 Suppose you want to remind all your friends in your address book to return you your money,
 the command you would enter is our `people remindall` command.
@@ -923,7 +923,7 @@ You will also receive a carbon copy (CC) of each of the emails sent to your frie
 
 //tag::peoplefind[]
 [[find-person]]
-==== Finding a person: `find`
+==== Finding a person: `find` (Syin Yi)
 
 Suppose you want to find a person in your contact list by a specific keyword,
 the command you would enter is our `people find` command.
@@ -980,7 +980,7 @@ _Still confused? Find out more about <<debt-and-loan,the differences between deb
 
 //tag::peoplelist[]
 [[list-people]]
-==== Listing all contacts: `list`
+==== Listing all contacts: `list` (Syin Yi)
 
 Suppose that you have just executed the <<find-person, [blue]`people find`>> command. And now, you would like to see the
 entire list of people in your address book. The command you would enter is our `people list` command. +
@@ -1006,7 +1006,7 @@ entire list of people in your address book. The command you would enter is our `
 
 // tag::peopleclear[]
 [[peopleclear]]
-==== Clearing all contacts : `clear`
+==== Clearing all contacts : `clear` (Syin Yi)
 
 Suppose you want to clear all the contacts in your address book,
 the command you would enter is our `people clear` command.
